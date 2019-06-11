@@ -199,6 +199,9 @@ img {
     font-size: 3rem;
   }
 }
+.main-navigation .nav-container .logo-heading-big {
+  font-size: 5rem;
+}
 .main-navigation .nav-container .nav {
   width: 350px;
   display: flex;
@@ -213,6 +216,11 @@ img {
 .main-navigation .nav-container .nav a {
   font-size: 1.6rem;
   color: #212529;
+  text-decoration: none;
+}
+.main-navigation .nav-container .nav .a-hover {
+  font-size: 1.8rem;
+  color: #7e8b98;
   text-decoration: none;
 }
 .footer {
@@ -349,4 +357,7 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+.home .content-pick .destination-background {
+  background-color: lightgoldenrodyellow;
 }
