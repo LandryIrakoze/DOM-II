@@ -30,5 +30,13 @@ buttons.forEach(item => item.addEventListener('click', () => {
 
 const content = document.querySelectorAll('p');
 content.forEach(item => item.addEventListener('copy', () => {
-    alert('be sure to share our content with your twitter feed!');
+    alert('share this on twitter!');
+}));
+
+const destinationItems = document.querySelectorAll('.destination');
+destinationItems.forEach(item => item.addEventListener('mouseover', () => {
+   item.classList.toggle('destination-color');
+}));
+destinationItems.forEach(item => item.addEventListener('mouseout', () => {
+   item.classList.toggle('destination-color');
 }));
