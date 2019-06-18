@@ -4,10 +4,10 @@ navItems.forEach(item => item.addEventListener('click', (e) => {
     e.preventDefault();
 }));
 
-const images = document.querySelectorAll('img');
-images.forEach(item => addEventListener('wheel', (e) => {
-    console.log('test');
-}));
+const image = document.querySelector('img');
+image.addEventListener('wheel', (e) => {
+    TweenMax.to(image, 2, {x:200, ease:Bounce.easeOut});
+});
 
 const header = document.querySelector('.main-navigation');
 header.addEventListener('mousemove', (e) => {
@@ -15,7 +15,7 @@ header.addEventListener('mousemove', (e) => {
 });
 
 const funBusTitle = document.querySelector('.intro h2');
-funBusTitle.addEventListener('mouseover', () => {
+funBusTitle.addEventListener('mouseenter', () => {
     funBusTitle.classList.toggle('fun');
 })
 
